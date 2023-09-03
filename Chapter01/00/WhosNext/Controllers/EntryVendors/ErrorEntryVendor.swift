@@ -6,7 +6,7 @@ struct ErrorEntryVendor  {
 }
 
 extension ErrorEntryVendor {
-  private func imageName(for int: Int) -> String {
+  private func imageName(for int: Int) throws -> String {
     let number = int % 51
     return "\(number).circle"
   }
