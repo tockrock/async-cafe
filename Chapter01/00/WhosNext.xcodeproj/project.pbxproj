@@ -33,7 +33,7 @@
 		62415E01292C280500DDD307 /* EntryGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryGrid.swift; sourceTree = "<group>"; };
 		62BEE28D292BFF1F00FB5068 /* WhosNext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhosNext.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62BEE290292BFF1F00FB5068 /* WhosNextApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhosNextApp.swift; sourceTree = "<group>"; };
-		62BEE292292BFF1F00FB5068 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		62BEE292292BFF1F00FB5068 /* MainView.swift */ = {isa = PBXFileReference; indentWidth = 2; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		62BEE294292BFF2000FB5068 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
