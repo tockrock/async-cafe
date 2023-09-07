@@ -1,6 +1,6 @@
 struct ErrorEntryVendor  {
   func entry(for count: Int) -> Entry {
-    let imageName = imageName(for: count)
+    let imageName = try imageName(for: count)
     return Entry(imageName: imageName)
   }
 }
