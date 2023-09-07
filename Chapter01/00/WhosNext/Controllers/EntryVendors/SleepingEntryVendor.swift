@@ -10,6 +10,7 @@ struct SleepingEntryVendor  {
 extension SleepingEntryVendor {
   private func imageName(for int: Int) -> String {
     let number = int % 51
+    sleep(UInt32.random(in: 2...6))
     return "\(number).circle"
   }
 }
