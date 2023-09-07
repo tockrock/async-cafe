@@ -1,7 +1,12 @@
 struct ErrorEntryVendor  {
   func entry(for count: Int) -> Entry {
-    let imageName = try imageName(for: count)
-    return Entry(imageName: imageName)
+    do {
+      let imageName = try imageName(for: count)
+      return Entry(imageName: imageName)
+    } catch {
+      print(error)
+      return errorEntry()
+    }
   }
 }
 
