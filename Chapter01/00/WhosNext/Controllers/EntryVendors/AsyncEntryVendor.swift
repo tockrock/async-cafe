@@ -1,6 +1,6 @@
 struct AsyncEntryVendor  {
-  func entry(for count: Int) -> Entry {
-    let imageName = imageName(for: count)
+  func entry(for count: Int) async -> Entry {
+    let imageName = await imageName(for: count)
     return Entry(imageName: imageName)
   }
 }
