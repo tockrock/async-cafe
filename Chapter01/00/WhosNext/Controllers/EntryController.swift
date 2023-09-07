@@ -1,5 +1,6 @@
 import Combine
 
+@MainActor
 class EntryController: ObservableObject {
   private var count = 0
   @Published private(set) var entries = [Entry]()
