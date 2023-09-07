@@ -10,7 +10,9 @@ extension EntryController {
   func next() {
     count += 1
     let entriesCopy = entries
-    let newEntry = vendor.entry(for: count)
-    entries = entriesCopy + [newEntry]
+    Task {
+      let newEntry = await vendor.entry(for: count)
+      entries = entriesCopy + [newEntry]
+    }
   }
 }
