@@ -6,7 +6,10 @@ struct AsyncEntryVendor  {
 }
 
 extension AsyncEntryVendor {
-  private func imageName(for int: Int) async -> String {
+  private func imageName(for int: Int) async throws -> String {
+    if int.isMultiple(of: 5 {
+      throw MultipleOfFiveError(number: int)
+    })
     let number = int % 51
     try? await Task.sleep(for: .seconds(Int.random(in: 2...6)))
     return "\(number).circle"
