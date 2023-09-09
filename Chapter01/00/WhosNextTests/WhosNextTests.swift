@@ -11,4 +11,9 @@ import XCTest
 final class WhosNextTests: XCTestCase {
   let vendor = AsyncEntryVendor()
   let entry3 = Entry(imageName: "3.circle")
+  
+  func testEntryCreation() async {
+    let result = await vendor.entry(for: 3)
+    XCTAssertEqual(result, entry3)
+  }
 }
