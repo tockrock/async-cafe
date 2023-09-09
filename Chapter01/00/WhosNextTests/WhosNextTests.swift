@@ -16,4 +16,14 @@ final class WhosNextTests: XCTestCase {
     let result = await vendor.entry(for: 3)
     XCTAssertEqual(result, entry3)
   }
+  
+  func testErrorEntryCreation() async {
+    let result = await vendor.entry(for: 5)
+    XCTAssertEqual(result, errorEntry())
+  }
+  
+  func testImageNameCreatesEntry() async throws {
+    let result = try await vendor.imageName(for: 3)
+    XCTAssertEqual(result, entry3.imageName)
+  }
 }
